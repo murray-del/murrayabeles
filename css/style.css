@@ -172,7 +172,9 @@ nav a.linkedin-icon:hover svg {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.05) 100%);
+    background:
+        linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.1) 40%, transparent 70%),
+        linear-gradient(to left, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 40%, transparent 65%);
 }
 
 .hero-content {
@@ -185,16 +187,37 @@ nav a.linkedin-icon:hover svg {
     color: #fff;
 }
 
-.hero-content p {
-    font-size: 1.05rem;
-    line-height: 1.7;
-    margin-bottom: 20px;
-    max-width: 560px;
+.hero-name {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 12px;
     margin-left: auto;
+    max-width: 560px;
 }
 
-.hero-content strong {
-    color: #fff;
+.hero-tagline {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    max-width: 560px;
+    margin-left: auto;
+    color: rgba(255,255,255,0.85);
+}
+
+.scroll-cue {
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+    opacity: 0.7;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(8px); }
 }
 
 .hero-content ul {
@@ -241,11 +264,23 @@ nav a.linkedin-icon:hover svg {
     padding: 72px 0 80px;
 }
 
-.featured-section h2 {
-    font-size: 1.5rem;
+.section-eyebrow {
+    font-size: 0.78rem;
     font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-muted);
     margin-bottom: 56px;
-    letter-spacing: -0.01em;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.section-eyebrow::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--color-border);
 }
 
 .project-block {
@@ -280,6 +315,11 @@ nav a.linkedin-icon:hover svg {
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.5s ease;
+}
+
+.project-image:hover img {
+    transform: scale(1.04);
 }
 
 .project-text h3 {
@@ -307,6 +347,16 @@ nav a.linkedin-icon:hover svg {
 
 .project-text a:hover {
     opacity: 0.6;
+}
+
+/* Section fade-in on scroll */
+.featured-section {
+    animation: fadeUp 0.6s ease both;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /* =========================================

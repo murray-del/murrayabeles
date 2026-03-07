@@ -6,7 +6,7 @@
     <title>Murray Abeles</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="home">
     <header>
         <div class="header-inner">
             <a href="index.html" class="site-name">Murray Abeles</a>
@@ -69,5 +69,10 @@
     <footer>
         <p>&copy; 2026 Murray Abeles</p>
     </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            document.querySelector('header').classList.toggle('scrolled', window.scrollY > 60);
+        });
+    </script>
 </body>
 </html>

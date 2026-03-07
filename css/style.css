@@ -38,7 +38,7 @@ header {
     top: 0;
     z-index: 100;
     height: var(--header-height);
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--color-border);
@@ -62,6 +62,7 @@ header .site-name {
     letter-spacing: 0.01em;
     text-decoration: none;
     color: var(--color-text);
+    transition: color 0.3s;
 }
 
 nav {
@@ -82,6 +83,54 @@ nav a {
 nav a:hover,
 nav a.active {
     color: var(--color-text);
+}
+
+/* Transparent header on homepage before scroll */
+body.home header {
+    background: transparent;
+    border-bottom: none;
+}
+
+body.home header .site-name {
+    color: #fff;
+}
+
+body.home nav a {
+    color: rgba(255,255,255,0.75);
+}
+
+body.home nav a:hover,
+body.home nav a.active {
+    color: #fff;
+}
+
+body.home header svg {
+    fill: #fff;
+}
+
+/* Solid header after scroll (homepage) */
+body.home header.scrolled {
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--color-border);
+}
+
+body.home header.scrolled .site-name {
+    color: var(--color-text);
+}
+
+body.home header.scrolled nav a {
+    color: var(--color-muted);
+}
+
+body.home header.scrolled nav a:hover,
+body.home header.scrolled nav a.active {
+    color: var(--color-text);
+}
+
+body.home header.scrolled svg {
+    fill: #0A66C2;
 }
 
 nav a.linkedin-icon {
@@ -114,7 +163,7 @@ nav a.linkedin-icon:hover svg {
 .hero-full {
     position: relative;
     height: calc(100vh - var(--header-height));
-    background: url('../images/hero.jpg') center center / cover no-repeat;
+    background: url('../images/PXL_20250730_222153449.MP.jpg') center center / cover no-repeat;
     display: flex;
     align-items: flex-end;
 }

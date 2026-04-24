@@ -531,6 +531,17 @@ a.plate-img:hover { opacity: 0.92; }
 .form-btn:hover { background: var(--accent); gap: 16px; }
 
 /* =========================================
+   THANK YOU
+   ========================================= */
+.thankyou-msg {
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--ink-2);
+  margin-bottom: 28px;
+}
+
+/* =========================================
    FOOTER
    ========================================= */
 .site-footer {

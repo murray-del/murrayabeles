@@ -141,7 +141,7 @@ body::before {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
   gap: 0 64px;
-  padding: 72px 0 100px;
+  padding: 40px 0 100px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -260,7 +260,7 @@ body::before {
    INTERIOR PAGES
    ========================================= */
 .page-wrap {
-  padding: 80px 56px 120px;
+  padding: 40px 56px 120px;
   position: relative;
   z-index: 1;
   min-height: 80vh;
@@ -576,10 +576,10 @@ a.plate-img:hover { opacity: 0.92; }
 @media (max-width: 1000px) {
   .site-nav  { padding: 16px 32px; }
   .home-wrap { padding: 0 32px 40px; }
-  .page-wrap { padding: 60px 32px 80px; }
+  .page-wrap { padding: 32px 32px 80px; }
   .site-footer { padding: 20px 32px; }
 
-  .hero { grid-template-columns: 1fr; gap: 48px; padding: 56px 0 64px; }
+  .hero { grid-template-columns: 1fr; gap: 48px; padding: 32px 0 64px; }
   .hero-h1 { font-size: 56px; }
   .portrait-frame { height: 480px; }
 

@@ -36,9 +36,7 @@
         </header>
 
         <div class="contact-solo">
-            <form class="contact-form" action="https://formspree.io/f/xrerjlab" method="POST">
-                <input type="hidden" name="_next" value="https://murrayabeles.com/thank-you.html">
-
+            <form id="contact-form" class="contact-form">
                 <div class="form-field">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
@@ -55,9 +53,14 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-
+                <div id="form-error" class="form-error" style="display:none;">Something went wrong. Please try again.</div>
                 <button type="submit" class="form-btn">Send note <span>→</span></button>
             </form>
+
+            <div id="form-success" class="contact-form" style="display:none;">
+                <p class="thankyou-msg">Your message has been received. I'll be in touch shortly.</p>
+                <a href="index.html" class="form-btn">Return home <span>→</span></a>
+            </div>
         </div>
     </main>
 
@@ -67,6 +70,35 @@
             <span>All rights reserved.</span>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const form = e.target;
+            const btn = form.querySelector('button[type="submit"]');
+            const error = document.getElementById('form-error');
+            btn.disabled = true;
+            btn.innerHTML = 'Sending… <span>→</span>';
+            error.style.display = 'none';
+            try {
+                const res = await fetch('https://formspree.io/f/xrerjlab', {
+                    method: 'POST',
+                    headers: { 'Accept': 'application/json' },
+                    body: new FormData(form)
+                });
+                if (res.ok) {
+                    form.style.display = 'none';
+                    document.getElementById('form-success').style.display = 'flex';
+                } else {
+                    throw new Error();
+                }
+            } catch {
+                error.style.display = 'block';
+                btn.disabled = false;
+                btn.innerHTML = 'Send note <span>→</span>';
+            }
+        });
+    </script>
 
 </body>
 </html>

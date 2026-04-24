@@ -4,71 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Murray Abeles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="header-inner">
-            <a href="index.html" class="site-name">Murray Abeles</a>
-            <nav>
-                <a href="index.html" class="active">Home</a>
-                <a href="bio.html">Bio</a>
-                <a href="press.html">Press</a>
-                <a href="contact.html">Contact</a>
-                <a href="https://www.linkedin.com/in/murrayabeles/" target="_blank" class="linkedin-icon" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-            </nav>
-        </div>
+
+    <header class="site-nav">
+        <a class="site-mark" href="index.html">
+            <span class="mark-rule"></span>
+            <span class="mark-name">Murray Abeles</span>
+        </a>
+        <nav>
+            <a class="nav-link active" href="index.html"><span class="nav-dash">—</span>Home</a>
+            <a class="nav-link" href="bio.html"><span class="nav-dash">—</span>Biography</a>
+            <a class="nav-link" href="press.html"><span class="nav-dash">—</span>Press</a>
+            <a class="nav-link" href="contact.html"><span class="nav-dash">—</span>Contact</a>
+            <a class="nav-linkedin" href="https://www.linkedin.com/in/murrayabeles/" target="_blank" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.268 2.37 4.268 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+            </a>
+        </nav>
     </header>
 
-    <main class="page">
+    <main class="home-wrap">
         <section class="hero">
-            <div class="hero-text">
-                <p><strong>Senior finance and social impact leader</strong> applying private sector financial acumen to the intersection of Art, Culture, and Economic Empowerment. Academic background in Theology and Computer Science informs a unique, systems-thinking approach to the nonprofit sector. Husband, father, boxer, jiujiteiro, and tinkerer.</p>
-                <ul>
-                    <li>CFO, <a href="https://publictheater.org/" target="_blank">The Public Theater</a></li>
-                    <li>Former Chief of Admin &amp; Finance at <a href="https://nyckidsrise.org/" target="_blank">NYC Kids RISE</a>. Investment Banking &amp; Asset Management Alum</li>
-                    <li>Board Member: <a href="http://nyckidsrise.org/about/" target="_blank">NYC Kids RISE</a>, <a href="https://www.nonprofitnewyork.org/" target="_blank">Nonprofit New York</a>, <a href="https://www.becausebaseball.org/" target="_blank">Because Baseball</a></li>
-                </ul>
+            <div class="hero-body">
+                <h1 class="hero-h1">
+                    <span class="hero-line-1">Murray</span>
+                    <span class="hero-line-2"><em>Abeles</em></span>
+                </h1>
+                <div class="hero-rule"></div>
+                <p class="hero-lede">
+                    Senior finance &amp; social impact leader at the intersection of
+                    <em>Art</em>, <em>Culture</em>, and <em>Economic Empowerment</em>.
+                </p>
+                <p class="hero-sub">
+                    CFO of The Public Theater. Formerly Chief of Administration &amp; Finance, NYC Kids RISE.
+                    Board member: NYC Kids RISE, Nonprofit New York, Because Baseball.
+                </p>
             </div>
-            <div class="hero-photo">Photo</div>
-        </section>
-
-        <hr class="section-divider">
-
-        <section class="featured-section">
-            <h2>Recent Highlights &amp; Projects</h2>
-
-            <div class="project-block">
-                <div class="project-image">Photo</div>
-                <div class="project-text">
-                    <h3>Delacorte Theater Renovation</h3>
-                    <p>Oversaw the $85 million renovation of the historic Delacorte Theater in Central Park — the outdoor home of Shakespeare in the Park — expanding accessibility and preserving a beloved New York institution.</p>
-                    <a href="https://www.nytimes.com/2025/08/07/theater/delacorte-shakespeare-renovation.html" target="_blank">Read more &rarr;</a>
+            <aside class="hero-portrait">
+                <div class="portrait-frame">
+                    <img src="images/portrait.jpg" alt="Murray Abeles">
+                    <div class="portrait-grain"></div>
                 </div>
-            </div>
-
-            <div class="project-block reverse">
-                <div class="project-image">Photo</div>
-                <div class="project-text">
-                    <h3>Twelfth Night — Inaugurating the Renovated Delacorte</h3>
-                    <p>The landmark production of <em>Twelfth Night</em>, starring Lupita Nyong'o, inaugurated the renovated Delacorte Theater and was broadcast nationally on PBS.</p>
-                    <a href="https://www.pbs.org/wnet/gperf/twelfth-night-about/17254/" target="_blank">Watch on PBS &rarr;</a>
-                </div>
-            </div>
-
-            <div class="project-block">
-                <div class="project-image">Photo</div>
-                <div class="project-text">
-                    <h3>NYC Kids RISE Convening '25</h3>
-                    <p>Featured speaker on capital stack strategies for community-based college savings programs, presenting alongside city and philanthropic partners at the annual NYC Kids RISE Convening.</p>
-                    <a href="https://nyckidsrise.org/" target="_blank">Learn about NYC Kids RISE &rarr;</a>
-                </div>
-            </div>
+            </aside>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Murray Abeles</p>
+    <footer class="site-footer">
+        <div class="footer-base">
+            <span>© 2026 Murray Abeles</span>
+            <span>All rights reserved.</span>
+        </div>
     </footer>
+
 </body>
 </html>

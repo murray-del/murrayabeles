@@ -3,37 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bio — Murray Abeles</title>
+    <title>Biography — Murray Abeles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="header-inner">
-            <a href="index.html" class="site-name">Murray Abeles</a>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="bio.html" class="active">Bio</a>
-                <a href="press.html">Press</a>
-                <a href="contact.html">Contact</a>
-                <a href="https://www.linkedin.com/in/murrayabeles/" target="_blank" class="linkedin-icon" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-            </nav>
-        </div>
+
+    <header class="site-nav">
+        <a class="site-mark" href="index.html">
+            <span class="mark-rule"></span>
+            <span class="mark-name">Murray Abeles</span>
+        </a>
+        <nav>
+            <a class="nav-link" href="index.html"><span class="nav-dash">—</span>Home</a>
+            <a class="nav-link active" href="bio.html"><span class="nav-dash">—</span>Biography</a>
+            <a class="nav-link" href="press.html"><span class="nav-dash">—</span>Press</a>
+            <a class="nav-link" href="contact.html"><span class="nav-dash">—</span>Contact</a>
+            <a class="nav-linkedin" href="https://www.linkedin.com/in/murrayabeles/" target="_blank" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.268 2.37 4.268 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+            </a>
+        </nav>
     </header>
 
-    <main class="page">
-        <div class="page-header">
-            <h1>Bio</h1>
-        </div>
-        <div class="page-content">
-            <p>Murray Abeles serves as Chief Financial Officer of the Public Theater, an iconic cultural institution dedicated to continuing the visionary work of its founder, Joe Papp. Founded over 60 years ago, the Public Theater operates on the principles that theater is an essential cultural force and that art and culture belong to everyone. As CFO, Murray creates the conditions for this work to thrive, stewarding the financial strategies that sustain The Public's commitment to radical inclusivity and social impact.</p>
-            <p>Prior to joining the Public Theater, Murray served as Chief of Administration and Finance of NYC Kids RISE, a non-profit dedicated to closing the racial wealth gap. There, he helped build the infrastructure for the Save for College Program, a universal platform providing real financial assets to families regardless of immigration status. Murray led the operational scaling of the program from a local pilot to a citywide initiative reaching every public kindergarten student in New York. Under his financial stewardship, over 280,000 students have amassed $50 million towards higher education to date.</p>
-            <p>Earlier in his career, Murray held the position of Senior Associate at Franco Financial Group, a boutique investment banking and financial advisory firm. There, he provided transactional and strategic consulting services to public, private, and non-profit companies in North America and Europe, and served as Chief Compliance Officer and Portfolio Manager for the firm's Wealth Management division.</p>
-            <p>He holds a B.A. in Religious Studies and Computer Science from New York University. Named one of Crain's New York's 2022 Notable Hispanic Leaders, Murray has also received New York University's MLK Scholars Alumni Impact Award and Madame C.J. Walker Award for Entrepreneurial Activity. A former Shafik Gabr Foundation Fellow, he currently serves on the boards of NYC Kids RISE, Nonprofit New York, and Because Baseball, an organization that promotes cultural understanding between the United States and the Middle East through youth baseball.</p>
-        </div>
+    <main class="page-wrap">
+        <header class="page-head">
+            <div class="eyebrow"><span class="eyebrow-dot"></span>Biography</div>
+            <h1 class="page-h1">About <em>Murray</em>.</h1>
+        </header>
+
+        <article class="essay">
+
+            <p class="essay-p essay-first">
+                <span class="dropcap">M</span>urray Abeles serves as Chief Financial Officer of The Public Theater, an iconic cultural institution dedicated to continuing the visionary work of its founder, Joe Papp. Founded over sixty years ago, the Public Theater operates on the principles that theater is an essential cultural force and that art and culture belong to everyone. As CFO, Murray creates the conditions for this work to thrive, stewarding the financial strategies that sustain The Public's commitment to radical inclusivity and social impact.
+            </p>
+
+            <p class="essay-p">
+                In 2025, he oversaw the <strong>$85 million renovation of the Delacorte Theater</strong> in Central Park — the outdoor home of Shakespeare in the Park — expanding accessibility and preserving a beloved New York institution. The renovated venue was inaugurated that summer with a landmark production of <em>Twelfth Night</em> starring Lupita Nyong'o, later broadcast nationally on PBS.
+            </p>
+
+            <figure class="plate">
+                <a class="plate-img" href="https://www.nytimes.com/2025/08/07/theater/delacorte-shakespeare-renovation.html" target="_blank" rel="noopener">
+                    <img src="images/delacorte-nyt.png" alt="The renovated Delacorte Theater">
+                    <div class="portrait-grain"></div>
+                </a>
+                <figcaption>
+                    <span class="cap-num">Fig. 01 —</span>
+                    <span>The revitalization features a striking new façade made from reclaimed redwood water towers, expanded accessibility for audiences and artists, and modernized backstage facilities while preserving its beloved open-air character. This project ensures that Joseph Papp's vision of free theater for all New Yorkers remains sustainable for future generations.</span>
+                </figcaption>
+            </figure>
+
+            <p class="essay-p">
+                Prior to joining The Public Theater, Murray served as Chief of Administration and Finance of NYC Kids RISE, a non-profit dedicated to closing the racial wealth gap. There, he helped build the infrastructure for the Save for College Program, a universal platform providing real financial assets to families regardless of immigration status. Murray led the operational scaling of the program from a local pilot to a citywide initiative reaching every public kindergarten student in New York. Under his financial stewardship, <strong>over 280,000 students have amassed $50 million towards higher education</strong> to date.
+            </p>
+
+            <figure class="plate">
+                <a class="plate-img" href="https://nyckidsrise.org/convening25/?utm_source=convening25&utm_medium=email&utm_campaign=rsvp-202510&utm_content=image" target="_blank" rel="noopener">
+                    <img src="images/nykidsrise-convening.webp" alt="NYC Kids RISE Convening">
+                    <div class="portrait-grain"></div>
+                </a>
+                <figcaption>
+                    <span class="cap-num">Fig. 02 —</span>
+                    <span>Featured speaker at the NYC Kids RISE Convening '25 on the panel 'Building a Capital Stack for New York City Kids.' Explored innovative strategies to scale funding for Community Scholarships, ranging from municipal revenue streams to public-private partnerships. Collaborated with government and business leaders to identify mechanisms that unlock systematic asset-building and ensure long-term generational wealth for students across the five boroughs.</span>
+                </figcaption>
+            </figure>
+
+            <p class="essay-p">
+                Earlier in his career, Murray held the position of Senior Associate at Franco Financial Group, a boutique investment banking and financial advisory firm. There, he provided transactional and strategic consulting services to public, private, and non-profit companies in North America and Europe, and served as Chief Compliance Officer and Portfolio Manager for the firm's Wealth Management division.
+            </p>
+
+            <figure class="plate">
+                <div class="plate-img">
+                    <img src="images/nasdaq-bell.jpg" alt="Murray Abeles ringing the Nasdaq opening bell">
+                    <div class="portrait-grain"></div>
+                </div>
+                <figcaption>
+                    <span class="cap-num">Fig. 03 —</span>
+                    <span>Ringing the Nasdaq opening bell with the BE Semiconductor Industries team.</span>
+                </figcaption>
+            </figure>
+
+            <p class="essay-p">
+                He holds a B.A. in Religious Studies and Computer Science from New York University. Named one of Crain's New York's 2022 Notable Hispanic Leaders, Murray has also received New York University's MLK Scholars Alumni Impact Award and Madame C.J. Walker Award for Entrepreneurial Activity. A former Shafik Gabr Foundation Fellow, he currently serves on the boards of NYC Kids RISE, Nonprofit New York, and Because Baseball — an organization that promotes cultural understanding between the United States and the Middle East through youth baseball.
+            </p>
+
+            <footer class="essay-colophon">
+                <span class="essay-colophon-rule"></span>
+                <span class="essay-colophon-text">Based in New York, NY.</span>
+                <span class="essay-colophon-rule"></span>
+            </footer>
+
+        </article>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Murray Abeles</p>
+    <footer class="site-footer">
+        <div class="footer-base">
+            <span>© 2026 Murray Abeles</span>
+            <span>All rights reserved.</span>
+        </div>
     </footer>
+
 </body>
 </html>

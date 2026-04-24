@@ -4,142 +4,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Press — Murray Abeles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="header-inner">
-            <a href="index.html" class="site-name">Murray Abeles</a>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="bio.html">Bio</a>
-                <a href="press.html" class="active">Press</a>
-                <a href="contact.html">Contact</a>
-                <a href="https://www.linkedin.com/in/murrayabeles/" target="_blank" class="linkedin-icon" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-            </nav>
-        </div>
+
+    <header class="site-nav">
+        <a class="site-mark" href="index.html">
+            <span class="mark-rule"></span>
+            <span class="mark-name">Murray Abeles</span>
+        </a>
+        <nav>
+            <a class="nav-link" href="index.html"><span class="nav-dash">—</span>Home</a>
+            <a class="nav-link" href="bio.html"><span class="nav-dash">—</span>Biography</a>
+            <a class="nav-link active" href="press.html"><span class="nav-dash">—</span>Press</a>
+            <a class="nav-link" href="contact.html"><span class="nav-dash">—</span>Contact</a>
+            <a class="nav-linkedin" href="https://www.linkedin.com/in/murrayabeles/" target="_blank" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.268 2.37 4.268 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+            </a>
+        </nav>
     </header>
 
-    <main class="page">
-        <div class="page-header">
-            <h1>Press</h1>
-        </div>
-        <div class="page-content">
+    <main class="page-wrap">
+        <header class="page-head">
+            <div class="eyebrow"><span class="eyebrow-dot"></span>Press &amp; Media</div>
+            <h1 class="page-h1">In <em>the press</em>.</h1>
+        </header>
 
-            <div class="press-section">
-                <h2>Delacorte Theater</h2>
-                <ul>
+        <div class="press">
+
+            <!-- ── Delacorte Theater ── -->
+            <section class="press-group">
+                <h2 class="press-group-title">Delacorte Theater</h2>
+                <ul class="press-list">
                     <li>
-                        <div class="press-item">
-                            <div class="press-logo"><img src="https://www.google.com/s2/favicons?domain=nytimes.com&sz=64" alt="The New York Times"></div>
-                            <a href="https://www.nytimes.com/2025/07/23/arts/design/delacorte-central-park-shakespeare.html" target="_blank">Free Shakespeare's Central Park Home Gets an $85 Million Glow Up</a>
-                        </div>
+                        <a href="https://www.nytimes.com/2025/07/23/arts/design/delacorte-central-park-shakespeare.html" target="_blank" class="press-item">
+                            <span class="press-logo press-logo--the-new-york-times">
+                                <img src="images/press/nyt.png" alt="The New York Times" class="press-logo-img">
+                            </span>
+                            <span class="press-title">Free Shakespeare's Central Park Home Gets an $85 Million Glow Up</span>
+                        </a>
                     </li>
                     <li>
-                        <div class="press-item">
-                            <div class="press-logo"><img src="https://www.google.com/s2/favicons?domain=nytimes.com&sz=64" alt="The New York Times"></div>
-                            <a href="https://www.nytimes.com/2025/08/07/theater/delacorte-shakespeare-renovation.html" target="_blank">Inside the $85 Million Renovation of Central Park's Home for Shakespeare</a>
-                        </div>
+                        <a href="https://www.nytimes.com/2025/08/07/theater/delacorte-shakespeare-renovation.html" target="_blank" class="press-item">
+                            <span class="press-logo press-logo--the-new-york-times">
+                                <img src="images/press/nyt.png" alt="The New York Times" class="press-logo-img">
+                            </span>
+                            <span class="press-title">Inside the $85 Million Renovation of Central Park's Home for Shakespeare</span>
+                        </a>
                     </li>
                     <li>
-                        <div class="press-item">
-                            <div class="press-logo"><img src="https://www.google.com/s2/favicons?domain=nytimes.com&sz=64" alt="The New York Times"></div>
-                            <a href="https://www.nytimes.com/2025/08/05/theater/shakespeare-in-the-park-nyc-delacorte-theater.html" target="_blank">Upstaged by Raccoons? The Joys of Playing Shakespeare in Central Park</a>
-                        </div>
+                        <a href="https://www.nytimes.com/2025/08/21/theater/twelfth-night-review-lupita-nyongo-in-illyria.html" target="_blank" class="press-item">
+                            <span class="press-logo press-logo--the-new-york-times">
+                                <img src="images/press/nyt.png" alt="The New York Times" class="press-logo-img">
+                            </span>
+                            <span class="press-title">'Twelfth Night' Review: Lupita Nyong'o in Illyria</span>
+                        </a>
                     </li>
                     <li>
-                        <div class="press-item">
-                            <div class="press-logo"><img src="https://www.google.com/s2/favicons?domain=nytimes.com&sz=64" alt="The New York Times"></div>
-                            <a href="https://www.nytimes.com/2025/08/21/theater/twelfth-night-review-lupita-nyongo-in-illyria.html" target="_blank">'Twelfth Night' Review: Lupita Nyong'o in Illyria</a>
-                        </div>
+                        <a href="https://www.bloomberg.com/news/features/2025-08-08/new-york-city-s-revived-delacorte-theater-brings-bard-back-to-the-park" target="_blank" class="press-item">
+                            <span class="press-logo press-logo--bloomberg">
+                                <img src="images/press/bloomberg.png" alt="Bloomberg" class="press-logo-img">
+                            </span>
+                            <span class="press-title">A New Stage for the Theater That Gave America Shakespeare in the Park</span>
+                        </a>
                     </li>
                     <li>
-                        <div class="press-item">
-                            <div class="press-logo"><img src="https://www.google.com/s2/favicons?domain=bloomberg.com&sz=64" alt="Bloomberg"></div>
-                            <a href="https://www.bloomberg.com/news/features/2025-08-08/new-york-city-s-revived-delacorte-theater-brings-bard-back-to-the-park" target="_blank">A New Stage for the Theater That Gave America Shakespeare in the Park</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="press-item">
-                            <div class="press-logo"><img src="https://www.google.com/s2/favicons?domain=wsj.com&sz=64" alt="The Wall Street Journal"></div>
-                            <a href="https://www.wsj.com/articles/twelfth-night-review-greatness-thrust-upon-central-park-742db9c3" target="_blank">'Twelfth Night' Review: Greatness Thrust Upon Central Park</a>
-                        </div>
+                        <a href="https://www.wsj.com/articles/twelfth-night-review-greatness-thrust-upon-central-park-742db9c3" target="_blank" class="press-item">
+                            <span class="press-logo press-logo--wall-street-journal">
+                                <img src="images/press/wsj.svg" alt="Wall Street Journal" class="press-logo-img">
+                            </span>
+                            <span class="press-title">'Twelfth Night' Review: Greatness Thrust Upon Central Park</span>
+                        </a>
                     </li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="press-section">
-                <h2>College Savings &amp; Recognition</h2>
-                <ul>
+            <!-- ── College Savings ── -->
+            <section class="press-group">
+                <h2 class="press-group-title">College Savings</h2>
+                <ul class="press-list">
                     <li>
-                        <div class="press-item">
-                            <div class="press-logo"><img src="https://www.google.com/s2/favicons?domain=crainsnewyork.com&sz=64" alt="Crain's New York Business"></div>
-                            <a href="https://www.crainsnewyork.com/awards/murray-abeles-notable-hispanic-leaders-2022" target="_blank">Crain's Notable Hispanic Leaders 2022</a>
-                        </div>
+                        <a href="https://www.nytimes.com/2021/10/11/your-money/529-savings-plans-baby-bonds.html" target="_blank" class="press-item">
+                            <span class="press-logo press-logo--the-new-york-times">
+                                <img src="images/press/nyt.png" alt="The New York Times" class="press-logo-img">
+                            </span>
+                            <span class="press-title">Seeding Accounts for Kindergartners and Hoping to Grow College Graduates</span>
+                        </a>
                     </li>
                     <li>
-                        <div class="press-item">
-                            <div class="press-logo"><img src="https://www.google.com/s2/favicons?domain=eldiariony.com&sz=64" alt="El Diario"></div>
-                            <a href="https://eldiariony.com/2019/09/01/promueven-programa-de-becas-y-ahorro-universitario-desde-primeros-grados/" target="_blank">Promueven programa de becas y ahorro universitario desde primeros grados</a>
-                        </div>
+                        <a href="https://www.wsj.com/articles/new-york-city-students-get-early-assist-in-saving-for-college-11607778222" target="_blank" class="press-item">
+                            <span class="press-logo press-logo--wall-street-journal">
+                                <img src="images/press/wsj.svg" alt="Wall Street Journal" class="press-logo-img">
+                            </span>
+                            <span class="press-title">New York City Students Get Early Assist in Saving for College</span>
+                        </a>
                     </li>
                     <li>
-                        <div class="press-item">
-                            <div class="press-logo"><img src="https://www.google.com/s2/favicons?domain=nytimes.com&sz=64" alt="The New York Times"></div>
-                            <a href="https://www.nytimes.com/2021/10/11/your-money/529-savings-plans-baby-bonds.html" target="_blank">Seeding Accounts for Kindergartners and Hoping to Grow College Graduates</a>
-                        </div>
+                        <a href="https://www.fastcompany.com/90606164/how-this-queens-community-built-1000-college-savings-accounts-for-all-its-kids" target="_blank" class="press-item">
+                            <span class="press-logo press-logo--fast-company">
+                                <img src="images/press/fastcompany.png" alt="Fast Company" class="press-logo-img">
+                            </span>
+                            <span class="press-title">How this Queens community built $1,000 college savings accounts for all its kids</span>
+                        </a>
                     </li>
                     <li>
-                        <div class="press-item">
-                            <div class="press-logo"><img src="https://www.google.com/s2/favicons?domain=wsj.com&sz=64" alt="The Wall Street Journal"></div>
-                            <a href="https://www.wsj.com/articles/new-york-city-students-get-early-assist-in-saving-for-college-11607778222" target="_blank">New York City Students Get Early Assist in Saving for College</a>
-                        </div>
+                        <a href="https://www.urban.org/research/publication/upward-mobility-through-universal-college-and-career-asset-building-platform" target="_blank" class="press-item">
+                            <span class="press-logo press-logo--urban-institute">
+                                <img src="images/press/urban.png" alt="Urban Institute" class="press-logo-img">
+                            </span>
+                            <span class="press-title">Upward Mobility through a Universal College and Career Asset-Building Platform</span>
+                        </a>
                     </li>
                     <li>
-                        <div class="press-item">
-                            <div class="press-logo"><img src="https://www.google.com/s2/favicons?domain=fastcompany.com&sz=64" alt="Fast Company"></div>
-                            <a href="https://www.fastcompany.com/90606164/how-this-queens-community-built-1000-college-savings-accounts-for-all-its-kids" target="_blank">How this Queens community built $1,000 college savings accounts for all its kids</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="press-item">
-                            <div class="press-logo"><img src="https://www.google.com/s2/favicons?domain=urban.org&sz=64" alt="Urban Institute"></div>
-                            <a href="https://www.urban.org/research/publication/upward-mobility-through-universal-college-and-career-asset-building-platform" target="_blank">Upward Mobility through a Universal College and Career Asset-Building Platform</a>
-                        </div>
+                        <a href="https://www.crainsnewyork.com/awards/murray-abeles-notable-hispanic-leaders-2022" target="_blank" class="press-item">
+                            <span class="press-logo press-logo--crains-new-york">
+                                <img src="images/press/crains.png" alt="Crain's New York" class="press-logo-img">
+                            </span>
+                            <span class="press-title">Notable Hispanic Leaders</span>
+                        </a>
                     </li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="press-section">
-                <h2>Media Appearances</h2>
-                <p class="press-note">Video clips available on the original site from CNBC, Univision, Spectrum Noticias, and others.</p>
-                <ul>
+            <!-- ── Broadcast & Media Appearances ── -->
+            <section class="press-group">
+                <h2 class="press-group-title">Broadcast &amp; Media Appearances</h2>
+                <ul class="press-list">
                     <li>
-                        <div class="press-item">
-                            <div class="press-logo"><img src="https://www.google.com/s2/favicons?domain=cnbc.com&sz=64" alt="CNBC"></div>
-                            <a href="https://www.cnbc.com/2021/09/17/new-york-city-is-funding-college-plans-to-close-the-wealth-gap-.html" target="_blank">New York City is funding college plans for students in the hopes of closing the wealth gap</a>
+                        <div class="press-embed">
+                            <iframe src="https://www.youtube.com/embed/YIeFqk4E97E" title="CNBC — New York City is funding college plans for students in the hopes of closing the wealth gap" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
+                        <a href="https://www.cnbc.com/2021/09/17/new-york-city-is-funding-college-plans-to-close-the-wealth-gap-.html" target="_blank" class="press-item">
+                            <span class="press-logo press-logo--cnbc">
+                                <img src="images/press/cnbc.png" alt="CNBC" class="press-logo-img">
+                            </span>
+                            <span class="press-title">New York City is funding college plans for students in the hopes of closing the wealth gap</span>
+                        </a>
                     </li>
                     <li>
-                        <div class="press-item">
-                            <div class="press-logo"><img src="https://www.google.com/s2/favicons?domain=univision.com&sz=64" alt="Univision"></div>
-                            <a href="https://www.univision.com/local/nueva-york-wxtv/este-programa-ayuda-a-padres-del-distrito-escolar-30-de-queens-a-ahorrar-para-la-universidad-de-sus-hijos-video" target="_blank">Este programa ayuda a padres del Distrito Escolar 30 de Queens a ahorrar para la universidad de sus hijos</a>
+                        <div class="press-embed">
+                            <iframe src="https://www.youtube.com/embed/BeGmYAoeO4c" title="Univision — Este programa ayuda a padres del Distrito Escolar 30 de Queens" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
+                        <a href="https://www.univision.com/local/nueva-york-wxtv/este-programa-ayuda-a-padres-del-distrito-escolar-30-de-queens-a-ahorrar-para-la-universidad-de-sus-hijos-video" target="_blank" class="press-item">
+                            <span class="press-logo press-logo--univision">
+                                <img src="images/press/univision.svg" alt="Univision" class="press-logo-img">
+                            </span>
+                            <span class="press-title">Este programa ayuda a padres del Distrito Escolar 30 de Queens a ahorrar para la universidad de sus hijos</span>
+                        </a>
                     </li>
                     <li>
-                        <div class="press-item">
-                            <div class="press-logo"><img src="https://www.google.com/s2/favicons?domain=ny1.com&sz=64" alt="Spectrum Noticias NY1"></div>
-                            <a href="https://spectrumlocalnews.com/nys/hudson-valley/noticias/2020/05/15/miles-de-familias-con-hijos-en-la-escuela-en-jackson-heights-y-otros-vecindarios-recibiran-cupones-de-regalo-de--150" target="_blank">Miles de familias con hijos en la escuela en Jackson Heights recibirán cupones de regalo de $150</a>
+                        <div class="press-embed">
+                            <iframe src="https://www.youtube.com/embed/xFvGBcCufOU" title="Spectrum NY1 — Miles de familias con hijos en la escuela en Jackson Heights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
+                        <a href="https://spectrumlocalnews.com/nys/hudson-valley/noticias/2020/05/15/miles-de-familias-con-hijos-en-la-escuela-en-jackson-heights-y-otros-vecindarios-recibiran-cupones-de-regalo-de--150" target="_blank" class="press-item">
+                            <span class="press-logo press-logo--spectrum-ny1">
+                                <img src="images/press/spectrum-ny1.png" alt="Spectrum NY1" class="press-logo-img">
+                            </span>
+                            <span class="press-title">Miles de familias con hijos en la escuela en Jackson Heights recibirán cupones de regalo de $150</span>
+                        </a>
                     </li>
                 </ul>
-            </div>
+            </section>
 
         </div>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Murray Abeles</p>
+    <footer class="site-footer">
+        <div class="footer-base">
+            <span>© 2026 Murray Abeles</span>
+            <span>All rights reserved.</span>
+        </div>
     </footer>
+
 </body>
 </html>

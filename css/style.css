@@ -90,7 +90,7 @@ body::before {
   letter-spacing: -0.01em;
 }
 
-.site-nav nav {
+.site-nav > nav:not(.nav-drawer) {
   display: flex;
   align-items: center;
   gap: 4px;

@@ -656,7 +656,7 @@ a.plate-img:hover { opacity: 0.92; }
   .page-wrap { padding: 40px 20px 64px; }
   .site-footer { padding: 16px 20px; }
 
-  .site-nav > nav { display: none; }
+  .site-nav > nav:not(.nav-drawer) { display: none; }
   .nav-hamburger { display: flex; }
   .mark-name { font-size: 16px; }
 

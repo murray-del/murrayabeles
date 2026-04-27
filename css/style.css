@@ -495,7 +495,7 @@ a.plate-img:hover { opacity: 0.92; }
 .press-logo {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   line-height: 1;
   padding-right: 20px;
   border-right: 1px solid var(--line-2);
@@ -507,7 +507,7 @@ a.plate-img:hover { opacity: 0.92; }
   width: 100%;
   height: 100%;
   object-fit: contain;
-  object-position: left center;
+  object-position: center;
   display: block;
 }
 .press-logo--cnbc .press-logo-img,

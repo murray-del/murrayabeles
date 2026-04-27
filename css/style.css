@@ -450,7 +450,7 @@ a.plate-img:hover { opacity: 0.92; }
 /* =========================================
    PRESS
    ========================================= */
-.press { display: flex; flex-direction: column; gap: 80px; }
+.press { display: flex; flex-direction: column; gap: 80px; max-width: 760px; margin: 0 auto; }
 
 .press-group-title {
   font-family: var(--mono);
